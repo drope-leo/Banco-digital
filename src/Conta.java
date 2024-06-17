@@ -65,27 +65,4 @@
     }
     
 
-
-    public class Main {
-        public static void main(String[] args) {
-            // Criando uma conta corrente e uma poupança
-            ContaCorrente contaCorrente = new ContaCorrente(12345, 10.0); // número da conta e taxa de manutenção
-            ContaPoupanca contaPoupanca = new ContaPoupanca(54321, 0.5);  // número da conta e taxa de rendimento
-    
-            // Depositando dinheiro nas contas
-            contaCorrente.depositar(1000.0);
-            contaPoupanca.depositar(500.0);
-    
-            // Realizando saques
-            contaCorrente.sacar(100.0);
-            contaPoupanca.sacar(50.0);
-    
-            // Transferindo dinheiro entre contas
-            contaCorrente.transferir(contaPoupanca, 200.0);
-    
-            // Mostrando saldo final das contas
-            System.out.println("Saldo conta corrente: R$" + contaCorrente.getSaldo());
-            System.out.println("Saldo conta poupança: R$" + contaPoupanca.getSaldo());
-        }
-    }
     
